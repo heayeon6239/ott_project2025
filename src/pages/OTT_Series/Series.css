@@ -142,7 +142,7 @@
 .series_container ul li{
     position: relative;
 }
-.series_container .movies > ul li:hover::after{
+.series_container .series > ul li:hover::after{
     content: '+';
     font-size: 100px;
     font-weight: 300;
