@@ -3,7 +3,7 @@ import '../OTT_Movie/MoviePopular.css'
 import { useState } from 'react'
 // 11-13 김광민 추가
 import { useContext } from 'react'
-import { OTTContext } from '../../api/OTT_Context'
+import { OTTContext } from '../../api/OTT_context'
 //11-13 정호준 모달 import
 import ModalB from "../OTT_ModalB/ModalB";
 

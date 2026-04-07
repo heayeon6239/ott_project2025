@@ -117,10 +117,11 @@
 
 /* 02. 오늘 대한민국의 TOP10 영화 */
 .xall .all .Top10_series{
+    width: 100%;
     position: absolute;
     top: 23%;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%;
+    transform: translateX(-50%); */
     z-index: 400;
 }
 .xall .all .Top10_series .title02{
@@ -132,9 +133,10 @@
     display: flex;
     gap: 6px;
     width: 1780px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     position: relative;
     transition: 1.0s;
+    margin: 0 auto;
 }
 .xall .all .Top10_series ul li{
     width: 350px;
@@ -174,9 +176,10 @@
 /* 슬라이드 */
 .xall .all .Top10_series .slide{
     display: flex;
-    width: 1780px;
+    /* width: 1780px; */
+    width: 100%;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 /* Top 10 슬라이드 버튼 (left btn) */

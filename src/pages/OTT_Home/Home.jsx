@@ -2,8 +2,8 @@
 import {useState,useEffect} from "react"
 import "./Home.css";
 import { useContext } from "react";
-// import { OTTContext } from "../../api/OTT_context";
-import { OTTContext } from "../../api/OTT_Context";
+import { OTTContext } from "../../api/OTT_context";
+// import { OTTContext } from "../../api/OTT_Context";
 //11-13 정호준 모달 import
 import ModalB from "../OTT_ModalB/ModalB";
 import { LikeAuth } from "../OTT_Like/LikeAutn";
@@ -94,14 +94,14 @@ export default function Home({
     // 슬라이드 함수 11-13 김광민
     const slideRight1 = (num) => {
         console.log(num)
-            if(currentX6 > -400 && num === 7){
-                setCurrentX6(currentX6 - 330)
+            if(currentX6 > -270 && num === 7){
+                setCurrentX6(currentX6 - 230)
             }
         }
     const slideLeft1 = (num) => {
         console.log('slideLeft')
         if(currentX6 < 0 && num === 7){
-            setCurrentX6(currentX6 + 330)
+            setCurrentX6(currentX6 + 230)
         }
     } 
 
@@ -248,7 +248,7 @@ export default function Home({
                         <button type='button' className='left' onClick={() => slideLeft(3)}>
                             <i class="fa-solid fa-chevron-left" onClick={() => slideLeft(3)}></i>
                         </button>
-                        <ul className="action_movie" style={{marginLeft:`${currentX2}px`}}>
+                        <ul className="action_movie" style={{marginLeft:8+`${currentX2}px`}}>
                         {titleArr[2].dataName.map((item)=>(
                             <li key={item.id} onClick={()=>{setOpenB(!openB);setOpenS(item);}}>
                                 <img src={`https://image.tmdb.org/t/p/original/${item.backdrop_path}`} />

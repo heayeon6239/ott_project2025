@@ -52,7 +52,7 @@ export default function OTTPeovider({children}){
         }
         else if(currentX1 < 0 && num === 2 ){
             setCurrentX1(currentX1 + 356)
-        }else if(currentX2 < 0 && num === 3){
+        }else if(currentX2 < -30 && num === 3){
             setCurrentX2(currentX2 + 356) 
         }else if(currentX3 < 0 && num === 4){
             setCurrentX3(currentX3 + 356)    
